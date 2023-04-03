@@ -1,18 +1,14 @@
 @font-face {
-	font-family: Centra;
-	src: url('./assets/font/CentraNo2-Bold.ttf');
-	font-weight: 700;
+	font-family: 'Goldman', cursive;
+	src: url('./assets/font/Goldman-Bold.ttf');
+	font-weight: 600;
 }
 @font-face {
-	font-family: Centra;
-	src: url('./assets/font/CentraNo2-Medium.ttf');
-	font-weight: 500;
+	font-family: 'Goldman', cursive;
+	src: url('./assets/font/Goldman-Regular.ttf');
+	font-weight: 300;
 }
-@font-face {
-	font-family: Centra;
-	src: url('./assets/font/CentraNo2-Book.ttf');
-	font-weight: 400;
-}
+@import url('https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&display=swap');
 
 /************ Default Css ************/
 * {
@@ -32,7 +28,7 @@ body {
   position: relative;
   background-color: #121212 !important;
   color: #fff !important;
-  font-family: 'Centra', sans-serif !important;
+  font-family: 'Goldman', cursive !important;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -82,10 +78,31 @@ p.danger {
 }
 /************ Navbar Css ************/
 .nav-logo {
-  width: 9%;
   color: #ffffff;
+  font-size: 50px;
+  padding: 0 25px;
 }
 
+@media  (max-width: 1915px) {
+  .nav-logo {
+    font-size: 30px;
+  }
+}
+
+
+
+.resume-nav-bar {
+  font-weight: 400;
+  color: #ffffff !important;
+  letter-spacing: 0.8px;
+  padding: 0 25px;
+  font-size: 18px;
+  opacity: 0.75;
+  text-decoration: none;
+}
+.resume-nav-bar:hover{
+  opacity: 4;
+}
 nav.navbar {
   padding: 18px 0;
   position: fixed;
@@ -96,7 +113,7 @@ nav.navbar {
 }
 nav.navbar.scrolled {
   padding: 0px 0;
-  background-color: #121212;
+  background-color: #1c1c1c;
 }
 nav.navbar a.navbar-brand {
     width: 9%;
@@ -111,7 +128,7 @@ nav.navbar .navbar-nav .nav-link.navbar-link {
 }
 nav.navbar .navbar-nav a.nav-link.navbar-link:hover,
 nav.navbar .navbar-nav a.nav-link.navbar-link.active {
-    opacity: 1;
+    opacity: 4;
 }
 span.navbar-text {
     display: flex;
@@ -232,16 +249,20 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before {
 }
 nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 	border-color: transparent;
+  background-color: #222831;
 }
+  .vvd {
+    font-size: 18px;
+  }
+
+  @media  (max-width: 1195px) {
+    .vvd {
+    height: 50px;
+    font-size: 9px !important;
+    }
+  }
 
 /************ Banner Css ************/
-
-.banner {
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-  height: 100vh;
-}
 
 .stars-canvas {
   position: absolute;
@@ -321,7 +342,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 /* Contact */
 .contact-container {
-  background-color: #222831;
+  background-color: #1c1c1c;
   padding: 5rem 0;
   color: #ffffff;
 }
@@ -332,6 +353,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .contact-form-wrapper {
+  font-family: 'Goldman', cursive;
   max-width: 600px;
   width: 100%;
   padding: 1rem;
@@ -401,6 +423,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 /************ Tech Css ************/
 .tech-icons {
+
   font-size: 4.5em !important;
   margin: 15px !important;
   padding: 10px !important;
@@ -422,7 +445,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .tech-icons-images {
-  width: 220px !important;
-  height: 130px !important;
-  object-fit: contain;
+  max-width: 150px !important;
+  max-height: 150px !important;
 }

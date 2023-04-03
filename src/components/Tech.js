@@ -17,28 +17,28 @@ export const Tech = () => {
     
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }} id='skills'>
       <Col xs={4} md={2} className="tech-icons">
-        <img style={{ width: '220px', height: '130px', objectFit: 'contain' }} src={javaImg}></img>
+        <img className="tech-icons-images" src={javaImg}></img>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-      <img style={{ width: '220px', height: '130px', objectFit: 'contain' }} src={cppImg}></img>
+      <img className="tech-icons-images" src={cppImg}></img>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-      <img style={{ width: '220px', height: '130px', objectFit: 'contain' }} src={cImg}></img>
+      <img className="tech-icons-images" src={cImg}></img>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-      <img style={{ width: '220px', height: '130px', objectFit: 'contain' }} src={jsImg}></img>
+      <img className="tech-icons-images" src={jsImg}></img>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-      <img style={{ width: '220px', height: '130px', objectFit: 'contain' }} src={htmlImg}></img>
+      <img className="tech-icons-images" src={htmlImg}></img>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-      <img style={{ width: '220px', height: '130px', objectFit: 'contain' }} src={gitImg}></img>
+      <img className="tech-icons-images" src={gitImg}></img>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-      <img style={{ width: '220px', height: '130px', objectFit: 'contain' }} src={awsImg}></img>
+      <img className="tech-icons-images" src={awsImg}></img>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-      <img style={{ width: '220px', height: '130px', objectFit: 'contain' }} src={reactImg}></img>
+      <img className="tech-icons-images" src={reactImg}></img>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
       <SiThreedotjs/>

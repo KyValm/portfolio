@@ -67,9 +67,9 @@ export const Banner = () => {
                     <h2>{'(Kai-noah)'}</h2>  
                     <span className='txt-rotate' dataPeriod="1000" data-rotate='[ "Software Engineer","Web Developer", "Backend Software Engineer"]'><span className="wrap">{text}</span></span>
                     </h1>
-                    <p>As a passionate software engineer, I find immense joy in creating applications and developing websites that bring ideas to life. While I am eager to join a team where I can contribute my skills and grow professionally, I also believe in the value of enjoying the journey. If not given the opportunity to interview, I will still be found happily coding away, honing my craft, and eagerly exploring new technologies. I strive to learn and improve every day, driven by the endless possibilities that the world of programming offers. Whether or not we end up working together, I look forward to building innovative solutions and positively impacting the world around me, one line of code at a time.</p>
+                    <p>I am eager to join a team where I can contribute my skills and grow professionally, and I strive to learn and improve every day, driven by the endless possibilities that the world of programming offers. Whether or not we end up working together, I look forward to building innovative solutions and positively impacting the world around me, one line of code at a time.</p>
                     <HashLink to="#connect" style={{textDecoration: 'none'}}>
-                    <button><span>Let's Connect<ArrowRightCircle size={25}/></span></button>
+                    <button><span>Connect<ArrowRightCircle size={25}/></span></button>
                     </HashLink>
                     </div>}
                     </TrackVisibility>

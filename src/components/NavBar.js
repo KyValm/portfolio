@@ -13,6 +13,7 @@ export const NavBar = () => {
 
     const[activeLink, setActiveLink] = useState('home' , 'skills');
     const[scrolled, setScrolled] = useState(false);
+    const[collapse, setCollapse] = useState(true);
 
     useEffect(() => {
         const onScroll = () => {
@@ -30,32 +31,37 @@ export const NavBar = () => {
         setActiveLink(value);
       }
 
+      const handleNavLinkClick = (value) => {
+        onUpdateActiveLink(value);
+        setCollapse(!collapse);
+      };
+
     return (
         <Router>
-          <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
+          <Navbar expand="lg" className={scrolled ? "scrolled" : ""}>
             <Container>
               <Navbar.Brand href="">
                 <div className="nav-logo">K.V.</div>
               </Navbar.Brand>
-              <Navbar.Toggle aria-controls="basic-navbar-nav">
+              <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={() => setCollapse(!collapse)}>
                 <span className="navbar-toggler-icon"></span>
               </Navbar.Toggle>
-              <Navbar.Collapse id="basic-navbar-nav">
+              <Navbar.Collapse id="basic-navbar-nav" in={!collapse}>
                 <Nav className="ms-auto">
-                  <Nav.Link href="#home" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('home')}>Home</Nav.Link>
-                  <Nav.Link href="#skills" className={activeLink === 'skills' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('skills')}>Skills</Nav.Link>
-                  <Nav.Link href="#projects" className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('projects')}>Projects</Nav.Link>
-                  <a href="Kynoa_Valmonte_Resume_2023.pdf" target="_blank" rel="noopener noreferrer"className='resume-nav-bar' onClick={() => onUpdateActiveLink('resume')}>Resume
+                  <Nav.Link href="#home" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} onClick={() => handleNavLinkClick('home')}>Home</Nav.Link>
+                  <Nav.Link href="#skills" className={activeLink === 'skills' ? 'active navbar-link' : 'navbar-link'} onClick={() => handleNavLinkClick('skills')}>Skills</Nav.Link>
+                  <Nav.Link href="#projects" className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'} onClick={() => handleNavLinkClick('projects')}>Projects</Nav.Link>
+                  <a href="Kynoa_Valmonte_Resume_2023.pdf" target="_blank" rel="noopener noreferrer"className='resume-nav-bar' onClick={() => handleNavLinkClick('resume')}>Resume
                   <FiExternalLink/>
-                  </a>
+                  </a> 
                 </Nav>
-                <span className="navbar-text">
-                  <div className="social-icon">
+                <div className="social-icon">
                     <a href="https://www.linkedin.com/in/kyvalm/" target="_blank" rel="noopener noreferrer"><img src={navIcon1} alt="" /></a>
                     <a href="https://github.com/KyValm" target="_blank" rel="noopener noreferrer"><img src={navIcon2} alt="" /></a>
                   </div>
+                  <span className="navbar-text">
                   <HashLink to='#connect'>
-                    <button className="vvd"><span>Lets Connect</span></button>
+                    <button className="vvd" onClick={() => handleNavLinkClick('resume')}><span>Lets Connect</span></button>
                   </HashLink>
                 </span>
               </Navbar.Collapse>
