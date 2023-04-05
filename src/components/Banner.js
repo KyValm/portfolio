@@ -4,6 +4,7 @@ import { ArrowRightCircle } from 'react-bootstrap-icons';
 import TrackVisibility from 'react-on-screen';
 import headerImg from '../assets/img/header-img.svg';
 import { StarsCanvas } from './canvas';
+import kyImg from '../assets/img/ky.jpg';
 import 'animate.css';
 import { HashLink } from 'react-router-hash-link';
 import {
@@ -15,7 +16,7 @@ import {
 export const Banner = () => {
     const [loopNum, setLoopNum] = useState(0);
     const [isDeleting, setIsDeleting] = useState(false);
-    const toRotate = [ "Software Engineer","Web Developer", "Backend Software Engineer"];
+    const toRotate = [ "Software Engineer","Web Developer"];
     const [text, setText] = useState('');
     const [delta, setDelta] = useState (300 - Math.random() * 100);
     const [index, setIndex] = useState(1);
@@ -63,11 +64,16 @@ export const Banner = () => {
                   <TrackVisibility>        
                   {({ isVisible }) =>
                   <div className={isVisible ?  "animate__animated animate__bounceIn" : ""}>  
-                    <h1>{'Hi I\'m Kynoa'}
-                    <h2>{'(Kai-noah)'}</h2>  
-                    <span className='txt-rotate' dataPeriod="1000" data-rotate='[ "Software Engineer","Web Developer", "Backend Software Engineer"]'><span className="wrap">{text}</span></span>
+                    <h1 className='text-responsive'>{'Hi I\'m Kynoa'}
+                    <h2 className='text-responsive'>{'(Kai-noah)'}</h2>  
+                    <span className='txt-rotate text-responsive' dataPeriod="1000" data-rotate='[ "Software Engineer","Web Developer"]'><span className="wrap">{text}</span></span>
                     </h1>
-                    <p>I am eager to join a team where I can contribute my skills and grow professionally, and I strive to learn and improve every day, driven by the endless possibilities that the world of programming offers. Whether or not we end up working together, I look forward to building innovative solutions and positively impacting the world around me, one line of code at a time.</p>
+                    <p className='text-responsive' >I am eager to join a team where I can contribute my skills and grow professionally, 
+                      and I strive to learn and improve every day, 
+                      driven by the endless possibilities that the world of programming offers. 
+                      Whether or not we end up working together, 
+                      I look forward to building innovative solutions and positively impacting the world around me, 
+                      one line of code at a time.</p>
                     <HashLink to="#connect" style={{textDecoration: 'none'}}>
                     <button><span>Connect<ArrowRightCircle size={25}/></span></button>
                     </HashLink>
@@ -78,7 +84,7 @@ export const Banner = () => {
                   <TrackVisibility>
                   {({ isVisible }) =>
                   <div className={isVisible ? "animate__animated animate__bounceIn" : ""}>
-                     <img src={headerImg} alt="Header Img"/>
+                     <img className='profile' src={kyImg} alt="Header Img"/>
                   </div>}
                   </TrackVisibility>
                 </Col>

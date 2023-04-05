@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import emailjs from "emailjs-com";
 import { Container } from 'react-bootstrap';
-import Particle from "./canvas/Particle";
-
 
 const Contact = () => {
   const [emailStatus, setEmailStatus] = useState('');
@@ -23,7 +21,6 @@ const Contact = () => {
   return (
     <div className="contact-container" id='connect'>
       <Container className="form-wrapper">
-      <Particle/>
         <div className="contact-form-wrapper">
         <h2>Let's Chat
           <span className="wave">👋</span>
