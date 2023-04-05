@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import { ArrowRightCircle } from 'react-bootstrap-icons';
 import TrackVisibility from 'react-on-screen';
-import headerImg from '../assets/img/header-img.svg';
 import { StarsCanvas } from './canvas';
 import kyImg from '../assets/img/ky.jpg';
 import 'animate.css';
@@ -62,11 +61,11 @@ export const Banner = () => {
              <Row className="align-items-center">
                 <Col xs={12} md={6} xl={7}>     
                   <TrackVisibility>        
-                  {({ isVisible }) =>
-                  <div className={isVisible ?  "animate__animated animate__bounceIn" : ""}>  
+                  {({ isvisible }) =>
+                  <div className={isvisible ?  "animate__animated animate__bounceIn" : ""}>  
                     <h1 className='text-responsive'>{'Hi I\'m Kynoa'}
-                    <h2 className='text-responsive'>{'(Kai-noah)'}</h2>  
-                    <span className='txt-rotate text-responsive' dataPeriod="1000" data-rotate='[ "Software Engineer","Web Developer"]'><span className="wrap">{text}</span></span>
+                    <p className='text-responsive'>{'(Kai-noah)'}</p>  
+                    <span className='txt-rotate text-responsive' dataperiod="1000" data-rotate='[ "Software Engineer","Web Developer"]'><span className="wrap">{text}</span></span>
                     </h1>
                     <p className='text-responsive' >I am eager to join a team where I can contribute my skills and grow professionally, 
                       and I strive to learn and improve every day, 

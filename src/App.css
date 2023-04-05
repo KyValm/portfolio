@@ -478,6 +478,13 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   max-height: 150px !important;
 }
 
+.tech-header {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: x-large;
+}
+
+/* //Projects */
 .projects-header {
   text-align: center;
   margin-bottom: 30px;
@@ -487,9 +494,13 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   position: relative;
   overflow: hidden;
   background-color: #1c1c1c;
-  border-radius: 5px;
+  border-radius: 50px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s;
+  animation-name: hoverUpDown;
+  animation-duration: 3000ms;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
 }
 
 .project-card:hover {
@@ -534,4 +545,23 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .project-link:hover {
   background-color: #093f66;
+}
+
+@keyframes hoverUpDown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-7px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.hover-up-down {
+  animation-name: hoverUpDown;
+  animation-duration: 3000ms;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
 }
