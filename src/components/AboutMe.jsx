@@ -7,7 +7,7 @@ const AboutMe = () => {
     {
       icon: <FcKindle />,
       date: 'Sept 2021',
-      description: 'Began coding bootcamp',
+      description: 'Began coding bootcamp with Kenzie Academy',
     },
     {
       icon: <FcGraduationCap />,
@@ -17,7 +17,7 @@ const AboutMe = () => {
     {
       icon: <FcBriefcase />,
       date: 'Jan 2023',
-      description: 'Re-enrolled into school, pursuing BS of Computer Science',
+      description: 'Re-enrolled into school, pursuing BS in Computer Science',
     },
     {
         icon: <FcSelfServiceKiosk/>,
