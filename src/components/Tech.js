@@ -16,7 +16,6 @@ export const Tech = () => {
   return (
 
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }} id='skills'>
-      <div className="tech-header">About me</div>
       <Col xs={4} md={2} className="tech-icons">
         <img className="tech-icons-images" src={javaImg} alt="" ></img>
       </Col>

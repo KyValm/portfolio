@@ -70,9 +70,7 @@ export const Banner = () => {
                     <p className='text-responsive' >I am eager to join a team where I can contribute my skills and grow professionally, 
                       and I strive to learn and improve every day, 
                       driven by the endless possibilities that the world of programming offers. 
-                      Whether or not we end up working together, 
-                      I look forward to building innovative solutions and positively impacting the world around me, 
-                      one line of code at a time.</p>
+                      </p>
                     <HashLink to="#connect" style={{textDecoration: 'none'}}>
                     <button><span>Connect<ArrowRightCircle size={25}/></span></button>
                     </HashLink>
@@ -82,7 +80,7 @@ export const Banner = () => {
                 <Col xs={12} md={6} xl={5}>
                   <TrackVisibility>
                   {({ isVisible }) =>
-                  <div className={isVisible ? "animate__animated animate__bounceIn" : ""}>
+                  <div>
                      <img className='profile' src={kyImg} alt="Header Img"/>
                   </div>}
                   </TrackVisibility>

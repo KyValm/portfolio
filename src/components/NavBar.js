@@ -59,11 +59,7 @@ export const NavBar = () => {
                     <a href="https://www.linkedin.com/in/kyvalm/" target="_blank" rel="noopener noreferrer"><img src={navIcon1} alt="" /></a>
                     <a href="https://github.com/KyValm" target="_blank" rel="noopener noreferrer"><img src={navIcon2} alt="" /></a>
                   </div>
-                  <span className="navbar-text">
-                  <HashLink to='#connect'>
-                    <button className="vvd" onClick={() => handleNavLinkClick('resume')}><span>Lets Connect</span></button>
-                  </HashLink>
-                </span>
+                 
               </Navbar.Collapse>
             </Container>
           </Navbar>
