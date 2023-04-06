@@ -1,11 +1,7 @@
 import React, {useRef, useCallback} from 'react';
-import { animateScroll as scroll } from 'react-scroll';
 import useIntersectionObserver from './hooks/useIntersectionObserver';
 import { FcBriefcase,FcGraduationCap, FcSelfServiceKiosk, FcStackOfPhotos,FcKindle } from 'react-icons/fc';
 const AboutMe = () => {
-  const scrollToTop = () => {
-    scroll.scrollToTop();
-  };
 
   const aboutMeItems = [
     {
