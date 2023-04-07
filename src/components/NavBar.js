@@ -4,6 +4,7 @@ import navIcon1 from '../assets/img/nav-icon1.svg';
 import navIcon2 from '../assets/img/github.png';
 import { FiExternalLink } from 'react-icons/fi'
 import { HashLink } from 'react-router-hash-link';
+
 import {
   BrowserRouter as Router
 } from "react-router-dom";
@@ -52,7 +53,7 @@ export const NavBar = () => {
                   <Nav.Link href="#skills" className={activeLink === 'skills' ? 'active navbar-link' : 'navbar-link'} onClick={() => handleNavLinkClick('skills')}>Skills</Nav.Link>
                   <Nav.Link href="#projects" className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'} onClick={() => handleNavLinkClick('projects')}>Projects</Nav.Link>
                   <div className={activeLink === 'resume' ? 'active navbar-link' : 'navbar-link'} onClick={() => handleNavLinkClick('resume')}>
-                    <a href="Kynoa_Valmonte_Resume_2023.pdf" target="_blank" rel="noopener noreferrer" className='resume-nav-bar'>
+                    <a href="/Kynoa_Valmonte_Resume_2023.pdf" target="_blank" rel="noopener noreferrer" className='resume-nav-bar'>
                         Resume
                         <FiExternalLink />
                     </a>
