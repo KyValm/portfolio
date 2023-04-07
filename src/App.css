@@ -76,6 +76,17 @@ p.success {
 p.danger {
 	color: red;
 }
+
+.component-wrapper {
+  margin-top: 33rem;
+}
+
+@media  (max-width: 710px) {
+  .component-wrapper {
+    margin: 2rem 0;
+  }
+}
+
 /************ Navbar Css ************/
 .nav-logo {
   color: #ffffff;
@@ -274,6 +285,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 100%;
   height: 100%;
   z-index: -1;
+  overflow: hidden;
 }
 
 .banner {
@@ -578,12 +590,14 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 /* About me */
 .about-me {
-  margin: 2rem 0;
+  padding-top: 1rem;
+  margin: 2rem -1rem;
+  background-color: #1c1c1c;
 }
 
 .about-me h2 {
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: rem;
 }
 
 .timeline {
@@ -594,7 +608,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2.5rem;
+  padding-bottom: 15px;
+
 }
 
 .timeline-icon {
@@ -610,8 +626,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .timeline-content {
-  background: #1c1c1c;
-  padding: 1.5rem;
+  padding: 2rem;
   border: 1px solid #d7d7d7;
   border-radius: 4px;
   color: white; /* Add this line to make the text readable */
@@ -624,6 +639,14 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /* Add media queries for responsiveness */
 @media screen and (max-width: 767px) {
+  .about-me {
+    margin: 2rem 1rem;
+  }
+
+  .timeline {
+    padding: 0 1rem;
+  }
+
   .timeline-item {
     flex-direction: column;
     align-items: center;
@@ -631,6 +654,12 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
   .timeline-icon {
     margin-bottom: 1rem;
+    margin-right: 0;
+  }
+
+  .timeline-content {
+    padding: 1rem;
+    text-align: center;
   }
 }
 
@@ -669,6 +698,7 @@ button:hover {
   background-color: #45a049;
 }
 
+
 .about-me .subheader {
   font-size: 1.2rem;
   text-align: center;
@@ -696,3 +726,7 @@ button:hover {
   }
 }
 
+.projects-container {
+  width: 100%;
+  background-color: #121212;
+}

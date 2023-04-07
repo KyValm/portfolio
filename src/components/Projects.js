@@ -33,7 +33,7 @@ const Projects = (props) => {
   ];
 
   return (
-      <Container id='projects'>
+      <Container id='projects' className='projects-container'>
         <h2 className="projects-header">Projects</h2>
         <Row>
           {projectsData.map((project, index) => (

@@ -9,18 +9,18 @@ import  Contact  from "./components/Contact";
 import  Footer  from "./components/Footer";
 import AboutMe from "./components/AboutMe";
 
-function App () {
-    return (
-        <div className="App">
-          <NavBar />
-          <Banner />
-          <Projects/>
-          <AboutMe/>
-          <Tech/>
-          <Contact />
-          <Footer />
-        </div>
-      );
-    }
+function App() {
+  return (
+    <div className="App">
+      <NavBar />
+      <Banner />
+      <div className="component-wrapper"><Projects/></div>
+      <AboutMe/>
+      <Tech/>
+      <Contact />
+      <Footer />
+    </div>
+  );
+}
     
     export default App;

@@ -31,24 +31,24 @@ const AboutMe = () => {
       },
   ];
 
-  const observerRefs = aboutMeItems.map(() => useRef(null));
+//   const observerRefs = aboutMeItems.map(() => useRef(null));
 
- const makeVisible = useCallback((element, delay) => {
-    element.style.animationDelay = `${delay}s`;
-    element.classList.add('animate__animated', 'animate__fadeIn');
-  }, []);
+//  const makeVisible = useCallback((element, delay) => {
+//     element.style.animationDelay = `${delay}s`;
+//     element.classList.add('animate__animated', 'animate__fadeIn');
+//   }, []);
 
-  const makeInvisible = useCallback((element) => {
-    element.classList.remove('animate__animated', 'animate__fadeIn');
-  }, []);
+//   const makeInvisible = useCallback((element) => {
+//     element.classList.remove('animate__animated', 'animate__fadeIn');
+//   }, []);
 
-  observerRefs.forEach((ref, index) => {
-    useIntersectionObserver(
-      ref,
-      () => makeVisible(ref.current, index * 0.5),
-      () => makeInvisible(ref.current)
-    );
-  });
+//   observerRefs.forEach((ref, index) => {
+//     useIntersectionObserver(
+//       ref,
+//       () => makeVisible(ref.current, index * 0.5),
+//       () => makeInvisible(ref.current)
+//     );
+//   });
 
   return (
     <section id="about-me" className="about-me">
@@ -61,7 +61,7 @@ const AboutMe = () => {
       </p>
       <div className="timeline">
         {aboutMeItems.map((item, index) => (
-          <div ref={observerRefs[index]} key={index} className="timeline-item">
+          <div /*ref={observerRefs[index]}*/ key={index} className="timeline-item">
             <div className="timeline-icon">{item.icon}</div>
             <div className="timeline-content">
               <p className="date">{item.date}</p>
