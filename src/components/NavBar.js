@@ -51,9 +51,12 @@ export const NavBar = () => {
                   <Nav.Link href="#home" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} onClick={() => handleNavLinkClick('home')}>Home</Nav.Link>
                   <Nav.Link href="#skills" className={activeLink === 'skills' ? 'active navbar-link' : 'navbar-link'} onClick={() => handleNavLinkClick('skills')}>Skills</Nav.Link>
                   <Nav.Link href="#projects" className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'} onClick={() => handleNavLinkClick('projects')}>Projects</Nav.Link>
-                  <a href="Kynoa_Valmonte_Resume_2023.pdf" target="_blank" rel="noopener noreferrer"className='resume-nav-bar' onClick={() => handleNavLinkClick('resume')}>Resume
-                  <FiExternalLink/>
-                  </a> 
+                  <div className={activeLink === 'resume' ? 'active navbar-link' : 'navbar-link'} onClick={() => handleNavLinkClick('resume')}>
+                    <a href="Kynoa_Valmonte_Resume_2023.pdf" target="_blank" rel="noopener noreferrer" className='resume-nav-bar'>
+                        Resume
+                        <FiExternalLink />
+                    </a>
+                  </div>
                 </Nav>
                 <div className="social-icon">
                     <a href="https://www.linkedin.com/in/kyvalm/" target="_blank" rel="noopener noreferrer"><img src={navIcon1} alt="" /></a>
