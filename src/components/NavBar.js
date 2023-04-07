@@ -3,7 +3,6 @@ import { Navbar, Container, Nav } from 'react-bootstrap';
 import navIcon1 from '../assets/img/nav-icon1.svg';
 import navIcon2 from '../assets/img/github.png';
 import { FiExternalLink } from 'react-icons/fi'
-import resumePdf from '../assets/Kynoa_Valmonte_Resume_2023.pdf'
 import { HashLink } from 'react-router-hash-link';
 
 import {
@@ -54,7 +53,7 @@ export const NavBar = () => {
                   <Nav.Link href="#skills" className={activeLink === 'skills' ? 'active navbar-link' : 'navbar-link'} onClick={() => handleNavLinkClick('skills')}>Skills</Nav.Link>
                   <Nav.Link href="#projects" className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'} onClick={() => handleNavLinkClick('projects')}>Projects</Nav.Link>
                   <div className={activeLink === 'resume' ? 'active navbar-link' : 'navbar-link'} onClick={() => handleNavLinkClick('resume')}>
-                    <a href={resumePdf} target="_blank" rel="noopener noreferrer" className='resume-nav-bar'>
+                    <a href="/Kynoa_Valmonte_Resume_2023.pdf" target="_blank" rel="noopener noreferrer" className='resume-nav-bar'>
                         Resume
                         <FiExternalLink />
                     </a>
@@ -64,6 +63,7 @@ export const NavBar = () => {
                     <a href="https://www.linkedin.com/in/kyvalm/" target="_blank" rel="noopener noreferrer"><img src={navIcon1} alt="" /></a>
                     <a href="https://github.com/KyValm" target="_blank" rel="noopener noreferrer"><img src={navIcon2} alt="" /></a>
                   </div>
+
               </Navbar.Collapse>
             </Container>
           </Navbar>
