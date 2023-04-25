@@ -114,6 +114,10 @@ p.danger {
 .resume-nav-bar:hover{
   opacity: 4;
 }
+.navbar-nav {
+  align-items: center;
+  display: flex;
+}
 nav.navbar {
   padding: 18px 0;
   position: fixed;
@@ -121,10 +125,12 @@ nav.navbar {
   top: 0;
   z-index: 9999;
   transition:  0.32s ease-in-out;
+  align-items: center;
 }
 nav.navbar.scrolled {
   padding: 0px 0;
-  background-color: #1c1c1c;
+  background-color: #222222;
+
 }
 nav.navbar a.navbar-brand {
     width: 9%;
@@ -147,8 +153,9 @@ span.navbar-text {
     align-items: center;
 }
 .social-icon {
-    display: inline-block;
-    margin-left: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .social-icon a {
     width: 42px;
@@ -365,9 +372,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /* Adjust font size for medium screens (tablets) */
 @media (max-width: 768px) {
-  .text-responsive {
-    font-size: 0.9rem;
-  }
+  
 }
 
 /* Adjust font size for small screens (mobile devices) */
@@ -497,6 +502,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 /* //Projects */
+
 .projects-header {
   text-align: center;
   margin-bottom: 30px;
@@ -676,7 +682,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 button {
-  background-color: #4caf50;
+  background-color: #2a79b1;
   border: none;
   color: white;
   padding: 10px 20px;
@@ -691,7 +697,7 @@ button {
 }
 
 button:hover {
-  background-color: #45a049;
+  
 }
 
 

@@ -37,7 +37,7 @@ const Projects = (props) => {
         <h2 className="projects-header">Projects</h2>
         <Row>
           {projectsData.map((project, index) => (
-            <Col key={index} xs={12} md={6} lg={4} className="mb-4">
+            <Col key={index} xs={12} md={8} lg={4} className="mb-4">
               <div className="project-card">
                 <div
                   className="project-image"

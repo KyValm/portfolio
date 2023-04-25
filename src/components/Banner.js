@@ -67,10 +67,8 @@ export const Banner = () => {
                     <p className='text-responsive'>{'(Kai-noah)'}</p>  
                     <span className='txt-rotate text-responsive' dataperiod="1000" data-rotate='[ "Software Engineer","Web Developer"]'><span className="wrap">{text}</span></span>
                     </h1>
-                    <p className='text-responsive' >I am eager to join a team where I can contribute my skills and grow professionally, 
-                      and I strive to learn and improve every day, 
-                      driven by the endless possibilities that the world of programming offers. 
-                      </p>
+                    <p className='text-responsive'>I am the next engineer to change the world, and I've got a billion dollar idea to do just that!
+                    </p>
                     <HashLink to="#connect" style={{textDecoration: 'none'}}>
                     <button><span>Connect<ArrowRightCircle size={25}/></span></button>
                     </HashLink>
